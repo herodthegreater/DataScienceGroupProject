@@ -1,0 +1,30 @@
+{
+  "purpose": "Reproduction, not model tuning",
+  "tests": [
+    {
+      "scikit-learn": "1.9.0",
+      "python": "3.14.6",
+      "rf_label_agreement": 0.9911199911199912,
+      "rf_differing_labels": 80,
+      "rf_max_abs_probability_difference": 0.025910664226840685
+    },
+    {
+      "scikit-learn": "1.8.0",
+      "python": "3.12.5",
+      "rf_label_agreement": 0.9911199911199912,
+      "rf_differing_labels": 80,
+      "rf_max_abs_probability_difference": 0.025910664226840685
+    },
+    {
+      "scikit-learn": "1.7.2",
+      "python": "3.12.5",
+      "rf_label_agreement": 0.9564879564879565,
+      "rf_differing_labels": 392,
+      "rf_max_abs_probability_difference": 0.09095254065107006
+    }
+  ],
+  "foundation_test_ids_reproduced_in_memory": true,
+  "shared_inputs_overwritten": false,
+  "conclusion": "Resolved: the confirmed original forest reproduces every saved label and probability in scikit-learn 1.9.1. Final common permutation and complexity use that model.",
+  "resolution": "The confirmed original fitted forest reproduces all saved labels and probabilities in scikit-learn 1.9.1. Final permutation importance and complexity use that model."
+}

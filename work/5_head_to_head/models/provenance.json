@@ -1,0 +1,70 @@
+{
+  "file": "models/random_forest.joblib.gz.manifest.json",
+  "sha256": "4af107927a171263f10ab1ee4bdf5154dcfa8c6f926a44e04fbde8111837b379",
+  "bytes": 185730945,
+  "user_confirmation": "The user confirmed with their friend that the earlier fitted model is correct.",
+  "embedded_sklearn_version": "1.9.1",
+  "initial_verification": {
+    "labels_differ": 0,
+    "maximum_probability_difference": 3.3306690738754696e-16,
+    "local_sklearn": "1.9.0"
+  },
+  "final_verification": {
+    "model": "random_forest",
+    "source": "confirmed_original_fitted_model",
+    "label_agreement": 1.0,
+    "probability_max_abs_difference": 2.220446049250313e-16,
+    "model_test_accuracy": 0.6402486402486403,
+    "differing_labels": 0,
+    "matches_saved_outputs": true
+  },
+  "evaluation_environment": {
+    "python": "3.12.5",
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "platform": "macOS-15.5-arm64-arm-64bit"
+  },
+  "final_verification_sklearn_matches_saved_model": true,
+  "repository_storage": {
+    "format": "lossless-gzip-parts-v1",
+    "compressed_bytes": 42670417,
+    "compressed_sha256": "09b2c1123332f03af06f62278085e4b696c4f38ca25fbd90ed1f085c15d092df",
+    "original_bytes": 185730945,
+    "original_sha256": "4af107927a171263f10ab1ee4bdf5154dcfa8c6f926a44e04fbde8111837b379",
+    "parts": [
+      {
+        "path": "parts/random_forest.joblib.gz.part01",
+        "bytes": 8388608,
+        "sha256": "2fc660c5aec14a21f5aa59ae2817faaf9f4b15cb57e17538c123777ac1cc4d54"
+      },
+      {
+        "path": "parts/random_forest.joblib.gz.part02",
+        "bytes": 8388608,
+        "sha256": "6452eff04b845ecce42a6b17f1f18196ac49e4a15774935d0bd8e614bf4067e8"
+      },
+      {
+        "path": "parts/random_forest.joblib.gz.part03",
+        "bytes": 8388608,
+        "sha256": "745f27370c395340ba0c6a21eee0e93ef2d19fb0b912a2f658fb943f4e89378d"
+      },
+      {
+        "path": "parts/random_forest.joblib.gz.part04",
+        "bytes": 8388608,
+        "sha256": "decffe1068555d8aeea662dbc90a4f6d55eaead99d7591cd3e18b1f1f60ecd98"
+      },
+      {
+        "path": "parts/random_forest.joblib.gz.part05",
+        "bytes": 8388608,
+        "sha256": "da5d05836ab76ba1e06c23277a1acc8b29e532506a02d29c4344bd376be9ac51"
+      },
+      {
+        "path": "parts/random_forest.joblib.gz.part06",
+        "bytes": 727377,
+        "sha256": "a7e9760ec7c6c31a161e77499438f16317ed32871602c85b84e11a8f58e771eb"
+      }
+    ]
+  }
+}

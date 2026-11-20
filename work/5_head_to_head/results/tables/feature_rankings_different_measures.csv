@@ -1,0 +1,15 @@
+rank,lr_feature,lr_test_macro_f1_drop,rf_feature,rf_training_gini_share,interpretation
+1,danceability,0.1024094490419225,acousticness,0.168088,Separate within-model rankings. Different definitions and scales; magnitudes are not comparable.
+2,acousticness,0.0786308113203211,danceability,0.14419,Separate within-model rankings. Different definitions and scales; magnitudes are not comparable.
+3,valence,0.056247717017255616,instrumentalness,0.141101,Separate within-model rankings. Different definitions and scales; magnitudes are not comparable.
+4,instrumentalness,0.05112376095906866,valence,0.088118,Separate within-model rankings. Different definitions and scales; magnitudes are not comparable.
+5,energy,0.03734040244791946,duration_ms,0.084514,Separate within-model rankings. Different definitions and scales; magnitudes are not comparable.
+6,explicit,0.028822139406360005,energy,0.07605,Separate within-model rankings. Different definitions and scales; magnitudes are not comparable.
+7,liveness,0.025969198996337893,speechiness,0.067257,Separate within-model rankings. Different definitions and scales; magnitudes are not comparable.
+8,loudness,0.02111939967595646,liveness,0.065313,Separate within-model rankings. Different definitions and scales; magnitudes are not comparable.
+9,speechiness,0.013607615540514062,tempo,0.064557,Separate within-model rankings. Different definitions and scales; magnitudes are not comparable.
+10,mode,0.008936317612320022,loudness,0.055921,Separate within-model rankings. Different definitions and scales; magnitudes are not comparable.
+11,tempo,0.008633590017620795,key,0.023251,Separate within-model rankings. Different definitions and scales; magnitudes are not comparable.
+12,duration_ms,0.004951535946017149,explicit,0.010989,Separate within-model rankings. Different definitions and scales; magnitudes are not comparable.
+13,time_signature,0.00014195381540944575,mode,0.007946,Separate within-model rankings. Different definitions and scales; magnitudes are not comparable.
+14,key,2.5122417112533045e-05,time_signature,0.002706,Separate within-model rankings. Different definitions and scales; magnitudes are not comparable.

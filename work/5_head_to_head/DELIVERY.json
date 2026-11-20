@@ -1,0 +1,47 @@
+{
+  "status": "complete",
+  "upstream_commit": "8c272308324ea2f292c195b4eb308bbf8cfa99dd",
+  "scope": "Only work/5_head_to_head changed. All shared input hashes remain unchanged.",
+  "model_dependency": "Resolved. User confirmed the original fitted model, which passes every saved-label and probability check.",
+  "model_sha256": "4af107927a171263f10ab1ee4bdf5154dcfa8c6f926a44e04fbde8111837b379",
+  "evaluation_environment": {
+    "python": "3.12.5",
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "platform": "macOS-15.5-arm64-arm-64bit"
+  },
+  "notebook": "20 cells, all 10 code cells executed successfully",
+  "validation_tests": "15 passed",
+  "presentation": {
+    "visible_slides": 2,
+    "hidden_backups": 2,
+    "spoken_words": 250,
+    "dimensions": "13.3333 x 7.5 inches",
+    "font": "Avenir Next",
+    "rendered_and_reviewed_all_slides": true,
+    "native_tables": 2,
+    "native_charts": 2,
+    "embedded_workbooks": 2,
+    "native_office_status": "The original/earlier slides were inspected in PowerPoint. Final revisions were rendered and inspected. The local Edit Data in Excel handoff remains unconfirmed; both source workbooks are included."
+  },
+  "limitations": [
+    "Full artist credit groups are separate but individual collaborators can cross the split.",
+    "Historical genre-selection test independence cannot be established.",
+    "Original forest training wall time was not recorded. Local prediction timings are not production benchmarks."
+  ],
+  "outstanding_model_inputs": [],
+  "files": {
+    "presentation/Spotify_Head_to_Head.pptx": "7b29a27463e77db1aae6be4067bc00382232af93a61103e20673182a883317eb",
+    "results/report.html": "5ad5962c310465855273c62fc1f6bef8508e3ebed8c597410ffe3fe4e65d0a26"
+  },
+  "integration_base_commit": "b90ad09deacec09ccd8bdf6c2be82209d608f77c",
+  "model_storage": "Six lossless gzip parts with individual checksums and automatic verified reassembly",
+  "artist_audit": {
+    "case_sensitive_shared_tokens": 2401,
+    "overlapping_test_tracks": 5072,
+    "test_tracks_without_exact_credit_overlap": 3937
+  }
+}

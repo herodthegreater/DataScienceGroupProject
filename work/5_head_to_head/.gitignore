@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+models/random_forest.joblib
+presentation/node_modules/
+presentation/build/
+models/random_forest.joblib.gz

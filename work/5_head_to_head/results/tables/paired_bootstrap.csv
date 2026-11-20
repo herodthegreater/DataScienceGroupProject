@@ -1,0 +1,3 @@
+metric,low_95,high_95,resamples,unit,seed,observed_difference_rf_minus_lr
+accuracy,0.052404968632786014,0.08810345032715437,2000,full artist credit string,4241,0.07070707070707072
+macro_f1,0.04995563724316493,0.0841445339408276,2000,full artist credit string,4241,0.06729795025384866

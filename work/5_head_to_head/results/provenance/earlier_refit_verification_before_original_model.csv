@@ -1,0 +1,3 @@
+model,label_agreement,probability_max_abs_difference,refit_test_accuracy,differing_labels,matches_saved_outputs
+logistic_regression,1.0,6.461498003318411e-14,0.5695415695415695,0,True
+random_forest,0.9911199911199912,0.025910664226840685,0.6392496392496393,80,False

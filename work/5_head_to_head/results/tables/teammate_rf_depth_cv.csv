@@ -1,0 +1,6 @@
+max_depth,mean_fold_train_accuracy,mean_fold_validation_accuracy,provenance
+5,0.591,0.579,"teammate notebook recorded output, 3 decimal places; not rerun"
+10,0.691,0.623,"teammate notebook recorded output, 3 decimal places; not rerun"
+15,0.814,0.643,"teammate notebook recorded output, 3 decimal places; not rerun"
+20,0.866,0.646,"teammate notebook recorded output, 3 decimal places; not rerun"
+None,0.873,0.647,"teammate notebook recorded output, 3 decimal places; not rerun"
