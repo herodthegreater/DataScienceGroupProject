@@ -1,0 +1,75 @@
+{
+  "status": "verified",
+  "shared_test_songs": 9009,
+  "files": {
+    "logistic_regression.csv": {
+      "sha256": "0ad3f56146fdb9d57ecd357aa5b8e3b870c0fbddc0a17ed79c8db6264316970e",
+      "original_repository_sha256": "55d192ec5afe1bf8fc2845f999bac4825dc6e3bdfbb713be560c99be8205a8d1",
+      "parsed_cells_equal_repository": true,
+      "only_line_endings_differ": true,
+      "max_probability_difference": 0.0,
+      "test_accuracy": 0.5695415695415695,
+      "validation": {
+        "rows": 9009,
+        "original_order_matches": true,
+        "alignment": "track_id",
+        "probability_columns": [
+          "proba_electronic",
+          "proba_hiphop/rnb",
+          "proba_latin",
+          "proba_pop",
+          "proba_rock"
+        ]
+      }
+    },
+    "random_forest.csv": {
+      "sha256": "6437cea9ac00faafcb31e9e0968fb1244160f1672c483b4944acb4db79c22a9f",
+      "original_repository_sha256": "c2713169c5a075ba4aac5b2496845d6cba734244f2333e2013a0f87ae5b43d96",
+      "parsed_cells_equal_repository": true,
+      "only_line_endings_differ": true,
+      "max_probability_difference": 0.0,
+      "test_accuracy": 0.6402486402486403,
+      "validation": {
+        "rows": 9009,
+        "original_order_matches": true,
+        "alignment": "track_id",
+        "probability_columns": [
+          "proba_electronic",
+          "proba_hiphop/rnb",
+          "proba_latin",
+          "proba_pop",
+          "proba_rock"
+        ]
+      }
+    },
+    "4_random_forest.ipynb": {
+      "sha256": "687b751154693232d4e3c9b7b6212a4c44e0ef0ede2fba5dc6778ed0c2153edb",
+      "cells": 16,
+      "code_cells": 8,
+      "notebook_python_metadata": "3.15.2",
+      "contains_fitted_model": false,
+      "contains_training_package_versions": false,
+      "analysis_scope": "fixed-recipe training CV, class-weighting OOF counts, Gini importance, saved test evaluation",
+      "code_inspected": true,
+      "experiments_rerun": false
+    },
+    "models/random_forest.joblib.gz.manifest.json": {
+      "sha256": "4af107927a171263f10ab1ee4bdf5154dcfa8c6f926a44e04fbde8111837b379",
+      "user_confirmed": true,
+      "matches_saved_outputs": true
+    }
+  },
+  "excluded_earlier_files": [
+    "Downloads/requirements.txt",
+    "Downloads/dataset.csv"
+  ],
+  "earlier_files_policy": "The user subsequently confirmed the fitted model. The other earlier downloads remain unnecessary; the shared repository data and independently pinned evaluation environment are used.",
+  "resolved": [
+    "Prediction outputs reconfirmed",
+    "RF depth/weighting code supplied",
+    "RF native Gini ranking supplied",
+    "Confirmed original fitted forest passes complete label/probability check"
+  ],
+  "remaining": [],
+  "rf_gini_matches_notebook_to_six_decimals": true
+}

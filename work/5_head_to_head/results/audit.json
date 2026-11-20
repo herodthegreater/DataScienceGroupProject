@@ -1,0 +1,129 @@
+{
+  "repository_commit": "8c272308324ea2f292c195b4eb308bbf8cfa99dd",
+  "files_sha256": {
+    "0_foundation.ipynb": "26192eefd239e910ef8b201c3748f1aaa164b1cbfd5c79b9e76a5e07413792e0",
+    "common.py": "f9dc5950dedefd13977d11ed9b47a65c6faa1872b6af11b25811439ca1908922",
+    "dataset.csv": "b202fa49909b2d5cef71a04b1d21243cfeb36414535f2ca9272aa646721177bd",
+    "clean_songs.csv": "10ed1ad113fb5c666af6fed2222af986a11d1f2b65868ce94438d2a8f5e912b7",
+    "predictions/logistic_regression.csv": "55d192ec5afe1bf8fc2845f999bac4825dc6e3bdfbb713be560c99be8205a8d1",
+    "predictions/random_forest.csv": "c2713169c5a075ba4aac5b2496845d6cba734244f2333e2013a0f87ae5b43d96"
+  },
+  "total_songs": 45046,
+  "train_songs": 36037,
+  "test_songs": 9009,
+  "classes_probability_order": [
+    "electronic",
+    "hiphop/rnb",
+    "latin",
+    "pop",
+    "rock"
+  ],
+  "feature_columns": [
+    "duration_ms",
+    "explicit",
+    "danceability",
+    "energy",
+    "key",
+    "loudness",
+    "mode",
+    "speechiness",
+    "acousticness",
+    "instrumentalness",
+    "liveness",
+    "valence",
+    "tempo",
+    "time_signature"
+  ],
+  "exact_artist_credit_overlap": 0,
+  "training_fold_artist_credit_overlap": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+  },
+  "shared_individual_artist_tokens": 2401,
+  "test_tracks_with_individual_artist_overlap": 5072,
+  "missing_predictors": 0,
+  "duplicate_track_ids": 0,
+  "raw_rows": 114000,
+  "limitations": [
+    "Groups use full artist credit strings. Individual artists can occur across splits through collaborations.",
+    "Foundation comments describe genre exclusions after weak rock performance. Historical test independence cannot be established from these files.",
+    "The legacy 70.5% notebook uses different data/splitting and is not comparable."
+  ],
+  "environment": {
+    "python": "3.12.5",
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "platform": "macOS-15.5-arm64-arm-64bit"
+  },
+  "prediction_validation": {
+    "logistic_regression": {
+      "rows": 9009,
+      "original_order_matches": true,
+      "alignment": "track_id",
+      "probability_columns": [
+        "proba_electronic",
+        "proba_hiphop/rnb",
+        "proba_latin",
+        "proba_pop",
+        "proba_rock"
+      ]
+    },
+    "random_forest": {
+      "rows": 9009,
+      "original_order_matches": true,
+      "alignment": "track_id",
+      "probability_columns": [
+        "proba_electronic",
+        "proba_hiphop/rnb",
+        "proba_latin",
+        "proba_pop",
+        "proba_rock"
+      ]
+    }
+  },
+  "baseline_class_chosen_from_train": "electronic",
+  "model_evaluation_requested": true,
+  "model_verification": [
+    {
+      "model": "logistic_regression",
+      "source": "fixed_recipe_refit_on_train",
+      "label_agreement": 1.0,
+      "probability_max_abs_difference": 1.1712852909795402e-13,
+      "model_test_accuracy": 0.5695415695415695,
+      "differing_labels": 0,
+      "matches_saved_outputs": true
+    },
+    {
+      "model": "random_forest",
+      "source": "confirmed_original_fitted_model",
+      "label_agreement": 1.0,
+      "probability_max_abs_difference": 2.220446049250313e-16,
+      "model_test_accuracy": 0.6402486402486403,
+      "differing_labels": 0,
+      "matches_saved_outputs": true
+    }
+  ],
+  "permutation_repeats": 5,
+  "permutation_scope": "held-out test, frozen verified models, descriptive interpretation only",
+  "bootstrap_repetitions": 2000,
+  "tie_margin_f1": 0.01,
+  "source_file_policy": "shared data, model recipes, and saved predictions were not modified",
+  "fitted_rf_model": {
+    "path": "models/random_forest.joblib.gz.manifest.json",
+    "sha256": "4af107927a171263f10ab1ee4bdf5154dcfa8c6f926a44e04fbde8111837b379",
+    "bytes": 42670417,
+    "hash_scope": "original model bytes after gzip decompression",
+    "storage_sha256": "09b2c1123332f03af06f62278085e4b696c4f38ca25fbd90ed1f085c15d092df",
+    "storage_format": "lossless-gzip-parts-v1",
+    "manifest_sha256": "27785c70907a06f7d753f73dfb57dde0293bf5339e28f532a1be9e76de2f147f"
+  },
+  "unresolved_dependencies": [],
+  "integration_base_commit": "b90ad09deacec09ccd8bdf6c2be82209d608f77c",
+  "individual_artist_token_matching": "semicolon-delimited, whitespace-trimmed, case-sensitive credited names; no identity resolution"
+}

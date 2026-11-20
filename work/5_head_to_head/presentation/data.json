@@ -1,0 +1,1648 @@
+{
+  "overall_metrics": [
+    {
+      "model": "baseline",
+      "accuracy": 0.303030303030303,
+      "macro_precision": 0.0606060606060606,
+      "macro_recall": 0.2,
+      "macro_f1": 0.0930232558139534,
+      "roc_auc_ovr_macro": 0.5,
+      "correct": 2730,
+      "test_songs": 9009
+    },
+    {
+      "model": "logistic_regression",
+      "accuracy": 0.5695415695415695,
+      "macro_precision": 0.531620380809005,
+      "macro_recall": 0.4827386132443566,
+      "macro_f1": 0.4885663874394067,
+      "roc_auc_ovr_macro": 0.8160553114407006,
+      "correct": 5131,
+      "test_songs": 9009
+    },
+    {
+      "model": "random_forest",
+      "accuracy": 0.6402486402486403,
+      "macro_precision": 0.6316062958858367,
+      "macro_recall": 0.5469542771796738,
+      "macro_f1": 0.5558643376932554,
+      "roc_auc_ovr_macro": 0.8698530098788932,
+      "correct": 5768,
+      "test_songs": 9009
+    }
+  ],
+  "per_genre_metrics": [
+    {
+      "model": "baseline",
+      "genre": "electronic",
+      "precision": 0.303030303030303,
+      "recall": 1.0,
+      "f1": 0.4651162790697674,
+      "support": 2730
+    },
+    {
+      "model": "baseline",
+      "genre": "hiphop/rnb",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 381
+    },
+    {
+      "model": "baseline",
+      "genre": "latin",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1474
+    },
+    {
+      "model": "baseline",
+      "genre": "pop",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 2041
+    },
+    {
+      "model": "baseline",
+      "genre": "rock",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 2383
+    },
+    {
+      "model": "logistic_regression",
+      "genre": "electronic",
+      "precision": 0.6641737891737892,
+      "recall": 0.6831501831501832,
+      "f1": 0.6735283495846877,
+      "support": 2730
+    },
+    {
+      "model": "logistic_regression",
+      "genre": "hiphop/rnb",
+      "precision": 0.4042553191489361,
+      "recall": 0.0997375328083989,
+      "f1": 0.16,
+      "support": 381
+    },
+    {
+      "model": "logistic_regression",
+      "genre": "latin",
+      "precision": 0.5685314685314685,
+      "recall": 0.5515603799185889,
+      "f1": 0.5599173553719008,
+      "support": 1474
+    },
+    {
+      "model": "logistic_regression",
+      "genre": "pop",
+      "precision": 0.4321329639889196,
+      "recall": 0.4585987261146497,
+      "f1": 0.444972664606608,
+      "support": 2041
+    },
+    {
+      "model": "logistic_regression",
+      "genre": "rock",
+      "precision": 0.5890083632019116,
+      "recall": 0.6206462442299623,
+      "f1": 0.6044135676338374,
+      "support": 2383
+    },
+    {
+      "model": "random_forest",
+      "genre": "electronic",
+      "precision": 0.706953642384106,
+      "recall": 0.782051282051282,
+      "f1": 0.7426086956521739,
+      "support": 2730
+    },
+    {
+      "model": "random_forest",
+      "genre": "hiphop/rnb",
+      "precision": 0.6282051282051282,
+      "recall": 0.1286089238845144,
+      "f1": 0.2135076252723311,
+      "support": 381
+    },
+    {
+      "model": "random_forest",
+      "genre": "latin",
+      "precision": 0.6425186188219364,
+      "recall": 0.6438263229308006,
+      "f1": 0.6431718061674009,
+      "support": 1474
+    },
+    {
+      "model": "random_forest",
+      "genre": "pop",
+      "precision": 0.5011820330969267,
+      "recall": 0.5193532582067614,
+      "f1": 0.5101058710298364,
+      "support": 2041
+    },
+    {
+      "model": "random_forest",
+      "genre": "rock",
+      "precision": 0.6791720569210866,
+      "recall": 0.6609315988250105,
+      "f1": 0.6699276903445343,
+      "support": 2383
+    }
+  ],
+  "paired_outcomes": [
+    {
+      "outcome": "both_correct",
+      "songs": 4547
+    },
+    {
+      "outcome": "both_wrong",
+      "songs": 2657
+    },
+    {
+      "outcome": "rf_only_correct",
+      "songs": 1221
+    },
+    {
+      "outcome": "lr_only_correct",
+      "songs": 584
+    }
+  ],
+  "paired_outcomes_by_genre": [
+    {
+      "genre": "electronic",
+      "both_correct": 1771,
+      "both_wrong": 501,
+      "lr_only_correct": 94,
+      "rf_only_correct": 364,
+      "net_extra_correct_rf": 270
+    },
+    {
+      "genre": "hiphop/rnb",
+      "both_correct": 29,
+      "both_wrong": 323,
+      "lr_only_correct": 9,
+      "rf_only_correct": 20,
+      "net_extra_correct_rf": 11
+    },
+    {
+      "genre": "latin",
+      "both_correct": 742,
+      "both_wrong": 454,
+      "lr_only_correct": 71,
+      "rf_only_correct": 207,
+      "net_extra_correct_rf": 136
+    },
+    {
+      "genre": "pop",
+      "both_correct": 723,
+      "both_wrong": 768,
+      "lr_only_correct": 213,
+      "rf_only_correct": 337,
+      "net_extra_correct_rf": 124
+    },
+    {
+      "genre": "rock",
+      "both_correct": 1282,
+      "both_wrong": 611,
+      "lr_only_correct": 197,
+      "rf_only_correct": 293,
+      "net_extra_correct_rf": 96
+    }
+  ],
+  "genre_deltas": [
+    {
+      "genre": "electronic",
+      "delta_precision": 0.0427798532103167,
+      "delta_recall": 0.0989010989010988,
+      "delta_f1": 0.0690803460674862,
+      "f1_comparison": "Random Forest wins",
+      "descriptive_tie_margin_f1": 0.01
+    },
+    {
+      "genre": "hiphop/rnb",
+      "delta_precision": 0.223949809056192,
+      "delta_recall": 0.0288713910761155,
+      "delta_f1": 0.0535076252723311,
+      "f1_comparison": "Random Forest wins",
+      "descriptive_tie_margin_f1": 0.01
+    },
+    {
+      "genre": "latin",
+      "delta_precision": 0.0739871502904678,
+      "delta_recall": 0.0922659430122116,
+      "delta_f1": 0.0832544507955,
+      "f1_comparison": "Random Forest wins",
+      "descriptive_tie_margin_f1": 0.01
+    },
+    {
+      "genre": "pop",
+      "delta_precision": 0.069049069108007,
+      "delta_recall": 0.0607545320921116,
+      "delta_f1": 0.0651332064232283,
+      "f1_comparison": "Random Forest wins",
+      "descriptive_tie_margin_f1": 0.01
+    },
+    {
+      "genre": "rock",
+      "delta_precision": 0.0901636937191749,
+      "delta_recall": 0.0402853545950482,
+      "delta_f1": 0.0655141227106969,
+      "f1_comparison": "Random Forest wins",
+      "descriptive_tie_margin_f1": 0.01
+    }
+  ],
+  "representative_tracks": [
+    {
+      "track_id": "6CHtKLZyxNZzxAQrd6ULxF",
+      "artists": "Shade k",
+      "track_name": "Eskimos",
+      "track_genre": "breakbeat",
+      "broad_genre": "electronic",
+      "popularity": 13,
+      "duration_ms": 234047,
+      "explicit": false,
+      "danceability": 0.696,
+      "energy": 0.906,
+      "key": 1,
+      "loudness": -5.683,
+      "mode": 1,
+      "speechiness": 0.0523,
+      "acousticness": 3.98e-05,
+      "instrumentalness": 0.00028,
+      "liveness": 0.0346,
+      "valence": 0.772,
+      "tempo": 128.026,
+      "time_signature": 4,
+      "split": "test",
+      "fold": -1,
+      "individual_artist_overlap": true,
+      "lr_predicted": "pop",
+      "rf_predicted": "electronic",
+      "lr_correct": false,
+      "rf_correct": true,
+      "outcome": "rf_only_correct",
+      "models_disagree": true,
+      "lr_confidence": 0.3531321983920415,
+      "lr_true_probability": 0.3037169890644133,
+      "rf_confidence": 0.4949096592405412,
+      "rf_true_probability": 0.4949096592405412,
+      "rf_minus_lr_true_probability": 0.1911926701761279
+    },
+    {
+      "track_id": "0QXFhVAwT09D0EvpdONVoT",
+      "artists": "Seekae",
+      "track_name": "John Duncan",
+      "track_genre": "idm",
+      "broad_genre": "electronic",
+      "popularity": 9,
+      "duration_ms": 554346,
+      "explicit": false,
+      "danceability": 0.311,
+      "energy": 0.464,
+      "key": 4,
+      "loudness": -8.451,
+      "mode": 0,
+      "speechiness": 0.0372,
+      "acousticness": 0.00738,
+      "instrumentalness": 0.885,
+      "liveness": 0.082,
+      "valence": 0.0391,
+      "tempo": 102.006,
+      "time_signature": 1,
+      "split": "test",
+      "fold": -1,
+      "individual_artist_overlap": true,
+      "lr_predicted": "electronic",
+      "rf_predicted": "rock",
+      "lr_correct": true,
+      "rf_correct": false,
+      "outcome": "lr_only_correct",
+      "models_disagree": true,
+      "lr_confidence": 0.5925615736938585,
+      "lr_true_probability": 0.5925615736938585,
+      "rf_confidence": 0.5188380711852073,
+      "rf_true_probability": 0.4480614291682402,
+      "rf_minus_lr_true_probability": -0.1445001445256183
+    },
+    {
+      "track_id": "1UBQ5GK8JaQjm5VbkBZY66",
+      "artists": "ZZ Top",
+      "track_name": "Sharp Dressed Man - 2008 Remaster",
+      "track_genre": "hard-rock",
+      "broad_genre": "rock",
+      "popularity": 73,
+      "duration_ms": 258026,
+      "explicit": false,
+      "danceability": 0.601,
+      "energy": 0.859,
+      "key": 5,
+      "loudness": -5.263,
+      "mode": 1,
+      "speechiness": 0.0276,
+      "acousticness": 0.000359,
+      "instrumentalness": 0.00124,
+      "liveness": 0.0871,
+      "valence": 0.446,
+      "tempo": 125.145,
+      "time_signature": 4,
+      "split": "test",
+      "fold": -1,
+      "individual_artist_overlap": false,
+      "lr_predicted": "electronic",
+      "rf_predicted": "rock",
+      "lr_correct": false,
+      "rf_correct": true,
+      "outcome": "rf_only_correct",
+      "models_disagree": true,
+      "lr_confidence": 0.3590435810693537,
+      "lr_true_probability": 0.3124138524229965,
+      "rf_confidence": 0.5818962217692867,
+      "rf_true_probability": 0.5818962217692867,
+      "rf_minus_lr_true_probability": 0.2694823693462901
+    },
+    {
+      "track_id": "5EXFyvILBXij8ypL2GIBvU",
+      "artists": "BO\u00d8WY",
+      "track_name": "CELLULOID DOLL",
+      "track_genre": "rockabilly",
+      "broad_genre": "rock",
+      "popularity": 24,
+      "duration_ms": 153133,
+      "explicit": false,
+      "danceability": 0.703,
+      "energy": 0.977,
+      "key": 4,
+      "loudness": -5.144,
+      "mode": 1,
+      "speechiness": 0.0474,
+      "acousticness": 0.0218,
+      "instrumentalness": 0.000277,
+      "liveness": 0.193,
+      "valence": 0.795,
+      "tempo": 106.306,
+      "time_signature": 3,
+      "split": "test",
+      "fold": -1,
+      "individual_artist_overlap": false,
+      "lr_predicted": "rock",
+      "rf_predicted": "pop",
+      "lr_correct": true,
+      "rf_correct": false,
+      "outcome": "lr_only_correct",
+      "models_disagree": true,
+      "lr_confidence": 0.3626700220887327,
+      "lr_true_probability": 0.3626700220887327,
+      "rf_confidence": 0.3462117552783192,
+      "rf_true_probability": 0.1682167993685021,
+      "rf_minus_lr_true_probability": -0.1944532227202305
+    },
+    {
+      "track_id": "6z9MTLcW2PTS96lXEVQ75P",
+      "artists": "Duran Duran",
+      "track_name": "Careless Memories - Live at Oakland Coliseum, Oakland, CA, 14/04/1984; 2004 Remaster",
+      "track_genre": "synth-pop",
+      "broad_genre": "pop",
+      "popularity": 23,
+      "duration_ms": 247466,
+      "explicit": false,
+      "danceability": 0.577,
+      "energy": 0.958,
+      "key": 2,
+      "loudness": -5.846,
+      "mode": 1,
+      "speechiness": 0.0696,
+      "acousticness": 0.0671,
+      "instrumentalness": 0.000319,
+      "liveness": 0.0842,
+      "valence": 0.629,
+      "tempo": 161.33,
+      "time_signature": 4,
+      "split": "test",
+      "fold": -1,
+      "individual_artist_overlap": true,
+      "lr_predicted": "rock",
+      "rf_predicted": "pop",
+      "lr_correct": false,
+      "rf_correct": true,
+      "outcome": "rf_only_correct",
+      "models_disagree": true,
+      "lr_confidence": 0.3540042021496855,
+      "lr_true_probability": 0.291734093803761,
+      "rf_confidence": 0.4394967040756513,
+      "rf_true_probability": 0.4394967040756513,
+      "rf_minus_lr_true_probability": 0.1477626102718903
+    },
+    {
+      "track_id": "5XiVCvi3bXYcFCRpRxk0p2",
+      "artists": "my little airport",
+      "track_name": "\u4f60\u8aaa\u4e4b\u5f8c\u6703\u627e\u6211 - LIVE",
+      "track_genre": "cantopop",
+      "broad_genre": "pop",
+      "popularity": 32,
+      "duration_ms": 185317,
+      "explicit": false,
+      "danceability": 0.426,
+      "energy": 0.227,
+      "key": 0,
+      "loudness": -13.427,
+      "mode": 1,
+      "speechiness": 0.0309,
+      "acousticness": 0.422,
+      "instrumentalness": 0.00351,
+      "liveness": 0.617,
+      "valence": 0.263,
+      "tempo": 140.393,
+      "time_signature": 4,
+      "split": "test",
+      "fold": -1,
+      "individual_artist_overlap": false,
+      "lr_predicted": "pop",
+      "rf_predicted": "rock",
+      "lr_correct": true,
+      "rf_correct": false,
+      "outcome": "lr_only_correct",
+      "models_disagree": true,
+      "lr_confidence": 0.36022318590418,
+      "lr_true_probability": 0.36022318590418,
+      "rf_confidence": 0.3710437041172335,
+      "rf_true_probability": 0.2175103719809604,
+      "rf_minus_lr_true_probability": -0.1427128139232196
+    },
+    {
+      "track_id": "0Y6JY0FynyXnS5pRob3eRS",
+      "artists": "Desejo De Menina",
+      "track_name": "Mil Perd\u00f5es",
+      "track_genre": "forro",
+      "broad_genre": "latin",
+      "popularity": 42,
+      "duration_ms": 79462,
+      "explicit": false,
+      "danceability": 0.502,
+      "energy": 0.714,
+      "key": 11,
+      "loudness": -6.359,
+      "mode": 0,
+      "speechiness": 0.0523,
+      "acousticness": 0.378,
+      "instrumentalness": 0.0,
+      "liveness": 0.566,
+      "valence": 0.336,
+      "tempo": 81.934,
+      "time_signature": 4,
+      "split": "test",
+      "fold": -1,
+      "individual_artist_overlap": true,
+      "lr_predicted": "rock",
+      "rf_predicted": "latin",
+      "lr_correct": false,
+      "rf_correct": true,
+      "outcome": "rf_only_correct",
+      "models_disagree": true,
+      "lr_confidence": 0.3881920014099005,
+      "lr_true_probability": 0.2589720909945468,
+      "rf_confidence": 0.4464030992227587,
+      "rf_true_probability": 0.4464030992227587,
+      "rf_minus_lr_true_probability": 0.1874310082282119
+    },
+    {
+      "track_id": "3miPShcfkKaLx1dDtT9P9d",
+      "artists": "Eduardo Costa",
+      "track_name": "Esta Noite Foi Maravilhosa",
+      "track_genre": "sertanejo",
+      "broad_genre": "latin",
+      "popularity": 47,
+      "duration_ms": 238087,
+      "explicit": false,
+      "danceability": 0.436,
+      "energy": 0.425,
+      "key": 7,
+      "loudness": -6.098,
+      "mode": 1,
+      "speechiness": 0.0433,
+      "acousticness": 0.82,
+      "instrumentalness": 0.0,
+      "liveness": 0.297,
+      "valence": 0.518,
+      "tempo": 187.634,
+      "time_signature": 4,
+      "split": "test",
+      "fold": -1,
+      "individual_artist_overlap": true,
+      "lr_predicted": "latin",
+      "rf_predicted": "pop",
+      "lr_correct": true,
+      "rf_correct": false,
+      "outcome": "lr_only_correct",
+      "models_disagree": true,
+      "lr_confidence": 0.5734340727278407,
+      "lr_true_probability": 0.5734340727278407,
+      "rf_confidence": 0.4261646710813533,
+      "rf_true_probability": 0.4015374783149151,
+      "rf_minus_lr_true_probability": -0.1718965944129256
+    },
+    {
+      "track_id": "4DcsVmrZKyKWhNOKbMMMQH",
+      "artists": "Shaker",
+      "track_name": "Next",
+      "track_genre": "soul",
+      "broad_genre": "hiphop/rnb",
+      "popularity": 62,
+      "duration_ms": 177548,
+      "explicit": true,
+      "danceability": 0.515,
+      "energy": 0.472,
+      "key": 8,
+      "loudness": -10.644,
+      "mode": 0,
+      "speechiness": 0.052,
+      "acousticness": 0.876,
+      "instrumentalness": 0.00325,
+      "liveness": 0.101,
+      "valence": 0.454,
+      "tempo": 195.56,
+      "time_signature": 4,
+      "split": "test",
+      "fold": -1,
+      "individual_artist_overlap": false,
+      "lr_predicted": "latin",
+      "rf_predicted": "hiphop/rnb",
+      "lr_correct": false,
+      "rf_correct": true,
+      "outcome": "rf_only_correct",
+      "models_disagree": true,
+      "lr_confidence": 0.3169715460357375,
+      "lr_true_probability": 0.1225878493323988,
+      "rf_confidence": 0.2210395761645762,
+      "rf_true_probability": 0.2210395761645762,
+      "rf_minus_lr_true_probability": 0.0984517268321774
+    },
+    {
+      "track_id": "22NJuIC2JVHSOmT6c6IKaO",
+      "artists": "Coolio;L.V.",
+      "track_name": "That's How It Is - Skit",
+      "track_genre": "funk",
+      "broad_genre": "hiphop/rnb",
+      "popularity": 52,
+      "duration_ms": 60306,
+      "explicit": true,
+      "danceability": 0.51,
+      "energy": 0.539,
+      "key": 7,
+      "loudness": -14.628,
+      "mode": 0,
+      "speechiness": 0.891,
+      "acousticness": 0.466,
+      "instrumentalness": 0.0,
+      "liveness": 0.379,
+      "valence": 0.375,
+      "tempo": 173.202,
+      "time_signature": 3,
+      "split": "test",
+      "fold": -1,
+      "individual_artist_overlap": true,
+      "lr_predicted": "hiphop/rnb",
+      "rf_predicted": "rock",
+      "lr_correct": true,
+      "rf_correct": false,
+      "outcome": "lr_only_correct",
+      "models_disagree": true,
+      "lr_confidence": 0.3264314214651099,
+      "lr_true_probability": 0.3264314214651099,
+      "rf_confidence": 0.3670425707190413,
+      "rf_true_probability": 0.1603537177619995,
+      "rf_minus_lr_true_probability": -0.1660777037031104
+    }
+  ],
+  "paired_bootstrap": [
+    {
+      "metric": "accuracy",
+      "low_95": 0.052404968632786,
+      "high_95": 0.0881034503271543,
+      "resamples": 2000,
+      "unit": "full artist credit string",
+      "seed": 4241,
+      "observed_difference_rf_minus_lr": 0.0707070707070707
+    },
+    {
+      "metric": "macro_f1",
+      "low_95": 0.0499556372431649,
+      "high_95": 0.0841445339408276,
+      "resamples": 2000,
+      "unit": "full artist credit string",
+      "seed": 4241,
+      "observed_difference_rf_minus_lr": 0.0672979502538486
+    }
+  ],
+  "audit": {
+    "repository_commit": "8c272308324ea2f292c195b4eb308bbf8cfa99dd",
+    "files_sha256": {
+      "0_foundation.ipynb": "26192eefd239e910ef8b201c3748f1aaa164b1cbfd5c79b9e76a5e07413792e0",
+      "common.py": "f9dc5950dedefd13977d11ed9b47a65c6faa1872b6af11b25811439ca1908922",
+      "dataset.csv": "b202fa49909b2d5cef71a04b1d21243cfeb36414535f2ca9272aa646721177bd",
+      "clean_songs.csv": "10ed1ad113fb5c666af6fed2222af986a11d1f2b65868ce94438d2a8f5e912b7",
+      "predictions/logistic_regression.csv": "55d192ec5afe1bf8fc2845f999bac4825dc6e3bdfbb713be560c99be8205a8d1",
+      "predictions/random_forest.csv": "c2713169c5a075ba4aac5b2496845d6cba734244f2333e2013a0f87ae5b43d96"
+    },
+    "total_songs": 45046,
+    "train_songs": 36037,
+    "test_songs": 9009,
+    "classes_probability_order": [
+      "electronic",
+      "hiphop/rnb",
+      "latin",
+      "pop",
+      "rock"
+    ],
+    "feature_columns": [
+      "duration_ms",
+      "explicit",
+      "danceability",
+      "energy",
+      "key",
+      "loudness",
+      "mode",
+      "speechiness",
+      "acousticness",
+      "instrumentalness",
+      "liveness",
+      "valence",
+      "tempo",
+      "time_signature"
+    ],
+    "exact_artist_credit_overlap": 0,
+    "training_fold_artist_credit_overlap": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "shared_individual_artist_tokens": 2401,
+    "test_tracks_with_individual_artist_overlap": 5072,
+    "missing_predictors": 0,
+    "duplicate_track_ids": 0,
+    "raw_rows": 114000,
+    "limitations": [
+      "Groups use full artist credit strings. Individual artists can occur across splits through collaborations.",
+      "Foundation comments describe genre exclusions after weak rock performance. Historical test independence cannot be established from these files.",
+      "The legacy 70.5% notebook uses different data/splitting and is not comparable."
+    ],
+    "environment": {
+      "python": "3.12.5",
+      "numpy": "2.5.5",
+      "pandas": "3.1.1",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2",
+      "platform": "macOS-15.5-arm64-arm-64bit"
+    },
+    "prediction_validation": {
+      "logistic_regression": {
+        "rows": 9009,
+        "original_order_matches": true,
+        "alignment": "track_id",
+        "probability_columns": [
+          "proba_electronic",
+          "proba_hiphop/rnb",
+          "proba_latin",
+          "proba_pop",
+          "proba_rock"
+        ]
+      },
+      "random_forest": {
+        "rows": 9009,
+        "original_order_matches": true,
+        "alignment": "track_id",
+        "probability_columns": [
+          "proba_electronic",
+          "proba_hiphop/rnb",
+          "proba_latin",
+          "proba_pop",
+          "proba_rock"
+        ]
+      }
+    },
+    "baseline_class_chosen_from_train": "electronic",
+    "model_evaluation_requested": true,
+    "model_verification": [
+      {
+        "model": "logistic_regression",
+        "source": "fixed_recipe_refit_on_train",
+        "label_agreement": 1.0,
+        "probability_max_abs_difference": 1.1712852909795402e-13,
+        "model_test_accuracy": 0.5695415695415695,
+        "differing_labels": 0,
+        "matches_saved_outputs": true
+      },
+      {
+        "model": "random_forest",
+        "source": "confirmed_original_fitted_model",
+        "label_agreement": 1.0,
+        "probability_max_abs_difference": 2.220446049250313e-16,
+        "model_test_accuracy": 0.6402486402486403,
+        "differing_labels": 0,
+        "matches_saved_outputs": true
+      }
+    ],
+    "permutation_repeats": 5,
+    "permutation_scope": "held-out test, frozen verified models, descriptive interpretation only",
+    "bootstrap_repetitions": 2000,
+    "tie_margin_f1": 0.01,
+    "source_file_policy": "shared data, model recipes, and saved predictions were not modified",
+    "fitted_rf_model": {
+      "path": "models/random_forest.joblib.gz.manifest.json",
+      "sha256": "4af107927a171263f10ab1ee4bdf5154dcfa8c6f926a44e04fbde8111837b379",
+      "bytes": 42670417,
+      "hash_scope": "original model bytes after gzip decompression",
+      "storage_sha256": "09b2c1123332f03af06f62278085e4b696c4f38ca25fbd90ed1f085c15d092df",
+      "storage_format": "lossless-gzip-parts-v1",
+      "manifest_sha256": "27785c70907a06f7d753f73dfb57dde0293bf5339e28f532a1be9e76de2f147f"
+    },
+    "unresolved_dependencies": [],
+    "integration_base_commit": "b90ad09deacec09ccd8bdf6c2be82209d608f77c",
+    "individual_artist_token_matching": "semicolon-delimited, whitespace-trimmed, case-sensitive credited names; no identity resolution"
+  },
+  "teammate_rf_gini_importance": [
+    {
+      "feature": "acousticness",
+      "gini_share": 0.168088,
+      "rank": 1,
+      "method": "training-fitted RF Gini impurity reduction",
+      "provenance": "teammate notebook recorded output, 6 decimal places; not rerun"
+    },
+    {
+      "feature": "danceability",
+      "gini_share": 0.14419,
+      "rank": 2,
+      "method": "training-fitted RF Gini impurity reduction",
+      "provenance": "teammate notebook recorded output, 6 decimal places; not rerun"
+    },
+    {
+      "feature": "instrumentalness",
+      "gini_share": 0.141101,
+      "rank": 3,
+      "method": "training-fitted RF Gini impurity reduction",
+      "provenance": "teammate notebook recorded output, 6 decimal places; not rerun"
+    },
+    {
+      "feature": "valence",
+      "gini_share": 0.088118,
+      "rank": 4,
+      "method": "training-fitted RF Gini impurity reduction",
+      "provenance": "teammate notebook recorded output, 6 decimal places; not rerun"
+    },
+    {
+      "feature": "duration_ms",
+      "gini_share": 0.084514,
+      "rank": 5,
+      "method": "training-fitted RF Gini impurity reduction",
+      "provenance": "teammate notebook recorded output, 6 decimal places; not rerun"
+    },
+    {
+      "feature": "energy",
+      "gini_share": 0.07605,
+      "rank": 6,
+      "method": "training-fitted RF Gini impurity reduction",
+      "provenance": "teammate notebook recorded output, 6 decimal places; not rerun"
+    },
+    {
+      "feature": "speechiness",
+      "gini_share": 0.067257,
+      "rank": 7,
+      "method": "training-fitted RF Gini impurity reduction",
+      "provenance": "teammate notebook recorded output, 6 decimal places; not rerun"
+    },
+    {
+      "feature": "liveness",
+      "gini_share": 0.065313,
+      "rank": 8,
+      "method": "training-fitted RF Gini impurity reduction",
+      "provenance": "teammate notebook recorded output, 6 decimal places; not rerun"
+    },
+    {
+      "feature": "tempo",
+      "gini_share": 0.064557,
+      "rank": 9,
+      "method": "training-fitted RF Gini impurity reduction",
+      "provenance": "teammate notebook recorded output, 6 decimal places; not rerun"
+    },
+    {
+      "feature": "loudness",
+      "gini_share": 0.055921,
+      "rank": 10,
+      "method": "training-fitted RF Gini impurity reduction",
+      "provenance": "teammate notebook recorded output, 6 decimal places; not rerun"
+    },
+    {
+      "feature": "key",
+      "gini_share": 0.023251,
+      "rank": 11,
+      "method": "training-fitted RF Gini impurity reduction",
+      "provenance": "teammate notebook recorded output, 6 decimal places; not rerun"
+    },
+    {
+      "feature": "explicit",
+      "gini_share": 0.010989,
+      "rank": 12,
+      "method": "training-fitted RF Gini impurity reduction",
+      "provenance": "teammate notebook recorded output, 6 decimal places; not rerun"
+    },
+    {
+      "feature": "mode",
+      "gini_share": 0.007946,
+      "rank": 13,
+      "method": "training-fitted RF Gini impurity reduction",
+      "provenance": "teammate notebook recorded output, 6 decimal places; not rerun"
+    },
+    {
+      "feature": "time_signature",
+      "gini_share": 0.002706,
+      "rank": 14,
+      "method": "training-fitted RF Gini impurity reduction",
+      "provenance": "teammate notebook recorded output, 6 decimal places; not rerun"
+    }
+  ],
+  "feature_rankings_different_measures": [
+    {
+      "rank": 1,
+      "lr_feature": "danceability",
+      "lr_test_macro_f1_drop": 0.1024094490419225,
+      "rf_feature": "acousticness",
+      "rf_training_gini_share": 0.168088,
+      "interpretation": "Separate within-model rankings. Different definitions and scales; magnitudes are not comparable."
+    },
+    {
+      "rank": 2,
+      "lr_feature": "acousticness",
+      "lr_test_macro_f1_drop": 0.0786308113203211,
+      "rf_feature": "danceability",
+      "rf_training_gini_share": 0.14419,
+      "interpretation": "Separate within-model rankings. Different definitions and scales; magnitudes are not comparable."
+    },
+    {
+      "rank": 3,
+      "lr_feature": "valence",
+      "lr_test_macro_f1_drop": 0.0562477170172556,
+      "rf_feature": "instrumentalness",
+      "rf_training_gini_share": 0.141101,
+      "interpretation": "Separate within-model rankings. Different definitions and scales; magnitudes are not comparable."
+    },
+    {
+      "rank": 4,
+      "lr_feature": "instrumentalness",
+      "lr_test_macro_f1_drop": 0.0511237609590686,
+      "rf_feature": "valence",
+      "rf_training_gini_share": 0.088118,
+      "interpretation": "Separate within-model rankings. Different definitions and scales; magnitudes are not comparable."
+    },
+    {
+      "rank": 5,
+      "lr_feature": "energy",
+      "lr_test_macro_f1_drop": 0.0373404024479194,
+      "rf_feature": "duration_ms",
+      "rf_training_gini_share": 0.084514,
+      "interpretation": "Separate within-model rankings. Different definitions and scales; magnitudes are not comparable."
+    },
+    {
+      "rank": 6,
+      "lr_feature": "explicit",
+      "lr_test_macro_f1_drop": 0.02882213940636,
+      "rf_feature": "energy",
+      "rf_training_gini_share": 0.07605,
+      "interpretation": "Separate within-model rankings. Different definitions and scales; magnitudes are not comparable."
+    },
+    {
+      "rank": 7,
+      "lr_feature": "liveness",
+      "lr_test_macro_f1_drop": 0.0259691989963378,
+      "rf_feature": "speechiness",
+      "rf_training_gini_share": 0.067257,
+      "interpretation": "Separate within-model rankings. Different definitions and scales; magnitudes are not comparable."
+    },
+    {
+      "rank": 8,
+      "lr_feature": "loudness",
+      "lr_test_macro_f1_drop": 0.0211193996759564,
+      "rf_feature": "liveness",
+      "rf_training_gini_share": 0.065313,
+      "interpretation": "Separate within-model rankings. Different definitions and scales; magnitudes are not comparable."
+    },
+    {
+      "rank": 9,
+      "lr_feature": "speechiness",
+      "lr_test_macro_f1_drop": 0.013607615540514,
+      "rf_feature": "tempo",
+      "rf_training_gini_share": 0.064557,
+      "interpretation": "Separate within-model rankings. Different definitions and scales; magnitudes are not comparable."
+    },
+    {
+      "rank": 10,
+      "lr_feature": "mode",
+      "lr_test_macro_f1_drop": 0.00893631761232,
+      "rf_feature": "loudness",
+      "rf_training_gini_share": 0.055921,
+      "interpretation": "Separate within-model rankings. Different definitions and scales; magnitudes are not comparable."
+    },
+    {
+      "rank": 11,
+      "lr_feature": "tempo",
+      "lr_test_macro_f1_drop": 0.0086335900176207,
+      "rf_feature": "key",
+      "rf_training_gini_share": 0.023251,
+      "interpretation": "Separate within-model rankings. Different definitions and scales; magnitudes are not comparable."
+    },
+    {
+      "rank": 12,
+      "lr_feature": "duration_ms",
+      "lr_test_macro_f1_drop": 0.0049515359460171,
+      "rf_feature": "explicit",
+      "rf_training_gini_share": 0.010989,
+      "interpretation": "Separate within-model rankings. Different definitions and scales; magnitudes are not comparable."
+    },
+    {
+      "rank": 13,
+      "lr_feature": "time_signature",
+      "lr_test_macro_f1_drop": 0.0001419538154094,
+      "rf_feature": "mode",
+      "rf_training_gini_share": 0.007946,
+      "interpretation": "Separate within-model rankings. Different definitions and scales; magnitudes are not comparable."
+    },
+    {
+      "rank": 14,
+      "lr_feature": "key",
+      "lr_test_macro_f1_drop": 2.5122417112533045e-05,
+      "rf_feature": "time_signature",
+      "rf_training_gini_share": 0.002706,
+      "interpretation": "Separate within-model rankings. Different definitions and scales; magnitudes are not comparable."
+    }
+  ],
+  "teammate_input_audit": {
+    "status": "verified",
+    "shared_test_songs": 9009,
+    "files": {
+      "logistic_regression.csv": {
+        "sha256": "0ad3f56146fdb9d57ecd357aa5b8e3b870c0fbddc0a17ed79c8db6264316970e",
+        "original_repository_sha256": "55d192ec5afe1bf8fc2845f999bac4825dc6e3bdfbb713be560c99be8205a8d1",
+        "parsed_cells_equal_repository": true,
+        "only_line_endings_differ": true,
+        "max_probability_difference": 0.0,
+        "test_accuracy": 0.5695415695415695,
+        "validation": {
+          "rows": 9009,
+          "original_order_matches": true,
+          "alignment": "track_id",
+          "probability_columns": [
+            "proba_electronic",
+            "proba_hiphop/rnb",
+            "proba_latin",
+            "proba_pop",
+            "proba_rock"
+          ]
+        }
+      },
+      "random_forest.csv": {
+        "sha256": "6437cea9ac00faafcb31e9e0968fb1244160f1672c483b4944acb4db79c22a9f",
+        "original_repository_sha256": "c2713169c5a075ba4aac5b2496845d6cba734244f2333e2013a0f87ae5b43d96",
+        "parsed_cells_equal_repository": true,
+        "only_line_endings_differ": true,
+        "max_probability_difference": 0.0,
+        "test_accuracy": 0.6402486402486403,
+        "validation": {
+          "rows": 9009,
+          "original_order_matches": true,
+          "alignment": "track_id",
+          "probability_columns": [
+            "proba_electronic",
+            "proba_hiphop/rnb",
+            "proba_latin",
+            "proba_pop",
+            "proba_rock"
+          ]
+        }
+      },
+      "4_random_forest.ipynb": {
+        "sha256": "687b751154693232d4e3c9b7b6212a4c44e0ef0ede2fba5dc6778ed0c2153edb",
+        "cells": 16,
+        "code_cells": 8,
+        "notebook_python_metadata": "3.15.2",
+        "contains_fitted_model": false,
+        "contains_training_package_versions": false,
+        "analysis_scope": "fixed-recipe training CV, class-weighting OOF counts, Gini importance, saved test evaluation",
+        "code_inspected": true,
+        "experiments_rerun": false
+      },
+      "models/random_forest.joblib": {
+        "sha256": "4af107927a171263f10ab1ee4bdf5154dcfa8c6f926a44e04fbde8111837b379",
+        "user_confirmed": true,
+        "matches_saved_outputs": true
+      }
+    },
+    "excluded_earlier_files": [
+      "Downloads/requirements.txt",
+      "Downloads/dataset.csv"
+    ],
+    "earlier_files_policy": "The user subsequently confirmed the fitted model. The other earlier downloads remain unnecessary; the shared repository data and independently pinned evaluation environment are used.",
+    "resolved": [
+      "Prediction outputs reconfirmed",
+      "RF depth/weighting code supplied",
+      "RF native Gini ranking supplied",
+      "Confirmed original fitted forest passes complete label/probability check"
+    ],
+    "remaining": [],
+    "rf_gini_matches_notebook_to_six_decimals": true
+  },
+  "permutation_importance": [
+    {
+      "model": "logistic_regression",
+      "metric": "macro_f1",
+      "feature": "duration_ms",
+      "mean_score_drop": 0.0049515359460171,
+      "sd_score_drop": 0.0017178951149288,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "macro_f1",
+      "feature": "explicit",
+      "mean_score_drop": 0.02882213940636,
+      "sd_score_drop": 0.0026893744636781,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "macro_f1",
+      "feature": "danceability",
+      "mean_score_drop": 0.1024094490419225,
+      "sd_score_drop": 0.002866025112257,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "macro_f1",
+      "feature": "energy",
+      "mean_score_drop": 0.0373404024479194,
+      "sd_score_drop": 0.0043195328327718,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "macro_f1",
+      "feature": "key",
+      "mean_score_drop": 2.5122417112533045e-05,
+      "sd_score_drop": 0.0004463644141271,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "macro_f1",
+      "feature": "loudness",
+      "mean_score_drop": 0.0211193996759564,
+      "sd_score_drop": 0.0041610557579992,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "macro_f1",
+      "feature": "mode",
+      "mean_score_drop": 0.00893631761232,
+      "sd_score_drop": 0.002228385428567,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "macro_f1",
+      "feature": "speechiness",
+      "mean_score_drop": 0.013607615540514,
+      "sd_score_drop": 0.0018464999577135,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "macro_f1",
+      "feature": "acousticness",
+      "mean_score_drop": 0.0786308113203211,
+      "sd_score_drop": 0.0028606495046708,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "macro_f1",
+      "feature": "instrumentalness",
+      "mean_score_drop": 0.0511237609590686,
+      "sd_score_drop": 0.0006403971100147,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "macro_f1",
+      "feature": "liveness",
+      "mean_score_drop": 0.0259691989963378,
+      "sd_score_drop": 0.001447665896261,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "macro_f1",
+      "feature": "valence",
+      "mean_score_drop": 0.0562477170172556,
+      "sd_score_drop": 0.0038628730978192,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "macro_f1",
+      "feature": "tempo",
+      "mean_score_drop": 0.0086335900176207,
+      "sd_score_drop": 0.0021641367089747,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "macro_f1",
+      "feature": "time_signature",
+      "mean_score_drop": 0.0001419538154094,
+      "sd_score_drop": 0.0009934633589154,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "accuracy",
+      "feature": "duration_ms",
+      "mean_score_drop": 0.0041736041736041,
+      "sd_score_drop": 0.001600250530886,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "accuracy",
+      "feature": "explicit",
+      "mean_score_drop": 0.0111222111222111,
+      "sd_score_drop": 0.001486572897572,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "accuracy",
+      "feature": "danceability",
+      "mean_score_drop": 0.1236541236541236,
+      "sd_score_drop": 0.0044549642527626,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "accuracy",
+      "feature": "energy",
+      "mean_score_drop": 0.0434454434454434,
+      "sd_score_drop": 0.0032450023882996,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "accuracy",
+      "feature": "key",
+      "mean_score_drop": 0.0003552003552003,
+      "sd_score_drop": 0.0003607076658735,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "accuracy",
+      "feature": "loudness",
+      "mean_score_drop": 0.0203352203352203,
+      "sd_score_drop": 0.0011219250765672,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "accuracy",
+      "feature": "mode",
+      "mean_score_drop": 0.0065934065934065,
+      "sd_score_drop": 0.0017147271854658,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "accuracy",
+      "feature": "speechiness",
+      "mean_score_drop": 0.0057054057054056,
+      "sd_score_drop": 0.0009223033889595,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "accuracy",
+      "feature": "acousticness",
+      "mean_score_drop": 0.0767232767232767,
+      "sd_score_drop": 0.0033751335592894,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "accuracy",
+      "feature": "instrumentalness",
+      "mean_score_drop": 0.0555444555444555,
+      "sd_score_drop": 0.0014550755562813,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "accuracy",
+      "feature": "liveness",
+      "mean_score_drop": 0.0234432234432234,
+      "sd_score_drop": 0.0013924210705353,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "accuracy",
+      "feature": "valence",
+      "mean_score_drop": 0.0555888555888556,
+      "sd_score_drop": 0.0035929760337275,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "accuracy",
+      "feature": "tempo",
+      "mean_score_drop": 0.0108114108114108,
+      "sd_score_drop": 0.0025249536611145,
+      "repeats": 5
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "accuracy",
+      "feature": "time_signature",
+      "mean_score_drop": 0.0012876012876012,
+      "sd_score_drop": 0.0002285632176931,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "macro_f1",
+      "feature": "duration_ms",
+      "mean_score_drop": 0.0322627084112608,
+      "sd_score_drop": 0.0033066952864853,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "macro_f1",
+      "feature": "explicit",
+      "mean_score_drop": 0.0299066668054365,
+      "sd_score_drop": 0.0025351830448437,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "macro_f1",
+      "feature": "danceability",
+      "mean_score_drop": 0.1055197064653635,
+      "sd_score_drop": 0.0018994130462465,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "macro_f1",
+      "feature": "energy",
+      "mean_score_drop": 0.0314696681709539,
+      "sd_score_drop": 0.0033856191042097,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "macro_f1",
+      "feature": "key",
+      "mean_score_drop": 0.0020365347604698,
+      "sd_score_drop": 0.0007877679166105,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "macro_f1",
+      "feature": "loudness",
+      "mean_score_drop": 0.019365935312451,
+      "sd_score_drop": 0.002756672775147,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "macro_f1",
+      "feature": "mode",
+      "mean_score_drop": 0.0038927121659278,
+      "sd_score_drop": 0.0014449442068922,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "macro_f1",
+      "feature": "speechiness",
+      "mean_score_drop": 0.0376365339938904,
+      "sd_score_drop": 0.0023382640444967,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "macro_f1",
+      "feature": "acousticness",
+      "mean_score_drop": 0.1282401630889003,
+      "sd_score_drop": 0.001714119174898,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "macro_f1",
+      "feature": "instrumentalness",
+      "mean_score_drop": 0.1015770112437729,
+      "sd_score_drop": 0.0035154278283321,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "macro_f1",
+      "feature": "liveness",
+      "mean_score_drop": 0.0266577110612031,
+      "sd_score_drop": 0.0017507929616768,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "macro_f1",
+      "feature": "valence",
+      "mean_score_drop": 0.0665127561663785,
+      "sd_score_drop": 0.0021991890310176,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "macro_f1",
+      "feature": "tempo",
+      "mean_score_drop": 0.0222172755886265,
+      "sd_score_drop": 0.0017270771742593,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "macro_f1",
+      "feature": "time_signature",
+      "mean_score_drop": 0.0036032351046467,
+      "sd_score_drop": 0.0007020537507352,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "accuracy",
+      "feature": "duration_ms",
+      "mean_score_drop": 0.0346986346986347,
+      "sd_score_drop": 0.0015196884084914,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "accuracy",
+      "feature": "explicit",
+      "mean_score_drop": 0.0095238095238095,
+      "sd_score_drop": 0.0011350270201944,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "accuracy",
+      "feature": "danceability",
+      "mean_score_drop": 0.1106227106227106,
+      "sd_score_drop": 0.0039939067768998,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "accuracy",
+      "feature": "energy",
+      "mean_score_drop": 0.0227328227328227,
+      "sd_score_drop": 0.0006784640599372,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "accuracy",
+      "feature": "key",
+      "mean_score_drop": 0.0005106005106005,
+      "sd_score_drop": 0.0006899886898843,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "accuracy",
+      "feature": "loudness",
+      "mean_score_drop": 0.0169830169830169,
+      "sd_score_drop": 0.0006548065802532,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "accuracy",
+      "feature": "mode",
+      "mean_score_drop": 0.001087801087801,
+      "sd_score_drop": 0.0003247583269691,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "accuracy",
+      "feature": "speechiness",
+      "mean_score_drop": 0.0236430236430236,
+      "sd_score_drop": 0.0007055277425716,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "accuracy",
+      "feature": "acousticness",
+      "mean_score_drop": 0.1205239205239205,
+      "sd_score_drop": 0.0023613561594982,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "accuracy",
+      "feature": "instrumentalness",
+      "mean_score_drop": 0.108069708069708,
+      "sd_score_drop": 0.0031665979685895,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "accuracy",
+      "feature": "liveness",
+      "mean_score_drop": 0.0202020202020202,
+      "sd_score_drop": 0.0012733604528538,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "accuracy",
+      "feature": "valence",
+      "mean_score_drop": 0.0601398601398601,
+      "sd_score_drop": 0.0009913248334672,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "accuracy",
+      "feature": "tempo",
+      "mean_score_drop": 0.0194472194472194,
+      "sd_score_drop": 0.0007861441318515,
+      "repeats": 5
+    },
+    {
+      "model": "random_forest",
+      "metric": "accuracy",
+      "feature": "time_signature",
+      "mean_score_drop": 0.0009768009768009,
+      "sd_score_drop": 0.0003741214240504,
+      "repeats": 5
+    }
+  ],
+  "complexity": [
+    {
+      "model": "logistic_regression",
+      "source": "fixed_recipe_refit_on_train",
+      "fit_seconds": 0.114691374998074,
+      "load_seconds": null,
+      "prediction_batch_seconds_median": 0.002087916014716,
+      "prediction_repeats": 5,
+      "workers": 1,
+      "serialized_bytes": 2283,
+      "coefficients": 70.0,
+      "intercepts": 5.0,
+      "trees": null,
+      "tree_nodes": null,
+      "median_depth": null,
+      "max_depth": null
+    },
+    {
+      "model": "random_forest",
+      "source": "confirmed_original_fitted_model",
+      "fit_seconds": null,
+      "load_seconds": 0.115290832996834,
+      "prediction_batch_seconds_median": 0.2561729169683531,
+      "prediction_repeats": 5,
+      "workers": 1,
+      "serialized_bytes": 185700394,
+      "coefficients": null,
+      "intercepts": null,
+      "trees": 300.0,
+      "tree_nodes": 1784632.0,
+      "median_depth": 27.0,
+      "max_depth": 36.0
+    }
+  ],
+  "model_verification": [
+    {
+      "model": "logistic_regression",
+      "source": "fixed_recipe_refit_on_train",
+      "label_agreement": 1.0,
+      "probability_max_abs_difference": 1.1712852909795404e-13,
+      "model_test_accuracy": 0.5695415695415695,
+      "differing_labels": 0,
+      "matches_saved_outputs": true
+    },
+    {
+      "model": "random_forest",
+      "source": "confirmed_original_fitted_model",
+      "label_agreement": 1.0,
+      "probability_max_abs_difference": 2.220446049250313e-16,
+      "model_test_accuracy": 0.6402486402486403,
+      "differing_labels": 0,
+      "matches_saved_outputs": true
+    }
+  ],
+  "common_permutation_comparison": [
+    {
+      "feature": "acousticness",
+      "lr_macro_f1_drop": 0.0786308113203211,
+      "rf_macro_f1_drop": 0.1282401630889003,
+      "rf_minus_lr_drop": 0.0496093517685792
+    },
+    {
+      "feature": "danceability",
+      "lr_macro_f1_drop": 0.1024094490419225,
+      "rf_macro_f1_drop": 0.1055197064653635,
+      "rf_minus_lr_drop": 0.003110257423441
+    },
+    {
+      "feature": "instrumentalness",
+      "lr_macro_f1_drop": 0.0511237609590686,
+      "rf_macro_f1_drop": 0.1015770112437729,
+      "rf_minus_lr_drop": 0.0504532502847043
+    },
+    {
+      "feature": "valence",
+      "lr_macro_f1_drop": 0.0562477170172556,
+      "rf_macro_f1_drop": 0.0665127561663785,
+      "rf_minus_lr_drop": 0.0102650391491228
+    },
+    {
+      "feature": "speechiness",
+      "lr_macro_f1_drop": 0.013607615540514,
+      "rf_macro_f1_drop": 0.0376365339938904,
+      "rf_minus_lr_drop": 0.0240289184533764
+    },
+    {
+      "feature": "duration_ms",
+      "lr_macro_f1_drop": 0.0049515359460171,
+      "rf_macro_f1_drop": 0.0322627084112608,
+      "rf_minus_lr_drop": 0.0273111724652436
+    },
+    {
+      "feature": "energy",
+      "lr_macro_f1_drop": 0.0373404024479194,
+      "rf_macro_f1_drop": 0.0314696681709539,
+      "rf_minus_lr_drop": -0.0058707342769654
+    },
+    {
+      "feature": "explicit",
+      "lr_macro_f1_drop": 0.02882213940636,
+      "rf_macro_f1_drop": 0.0299066668054365,
+      "rf_minus_lr_drop": 0.0010845273990765
+    },
+    {
+      "feature": "liveness",
+      "lr_macro_f1_drop": 0.0259691989963378,
+      "rf_macro_f1_drop": 0.0266577110612031,
+      "rf_minus_lr_drop": 0.0006885120648652
+    },
+    {
+      "feature": "tempo",
+      "lr_macro_f1_drop": 0.0086335900176207,
+      "rf_macro_f1_drop": 0.0222172755886265,
+      "rf_minus_lr_drop": 0.0135836855710057
+    },
+    {
+      "feature": "loudness",
+      "lr_macro_f1_drop": 0.0211193996759564,
+      "rf_macro_f1_drop": 0.019365935312451,
+      "rf_minus_lr_drop": -0.0017534643635054
+    },
+    {
+      "feature": "mode",
+      "lr_macro_f1_drop": 0.00893631761232,
+      "rf_macro_f1_drop": 0.0038927121659278,
+      "rf_minus_lr_drop": -0.0050436054463922
+    },
+    {
+      "feature": "time_signature",
+      "lr_macro_f1_drop": 0.0001419538154094,
+      "rf_macro_f1_drop": 0.0036032351046467,
+      "rf_minus_lr_drop": 0.0034612812892373
+    },
+    {
+      "feature": "key",
+      "lr_macro_f1_drop": 2.5122417112533045e-05,
+      "rf_macro_f1_drop": 0.0020365347604698,
+      "rf_minus_lr_drop": 0.0020114123433573
+    }
+  ]
+}

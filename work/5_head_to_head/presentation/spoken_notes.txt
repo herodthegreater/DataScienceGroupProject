@@ -1,0 +1,15 @@
+ISC 4241 — HEAD-TO-HEAD SPEAKER NOTES
+Two main slides, approximately two minutes total.
+
+SLIDE 1 — ABOUT 60 SECONDS
+
+My question is what Random Forest's extra complexity actually buys us. I compared both saved prediction files on exactly the same 9,009 test songs, matching them by track ID and checking the labels and probabilities. The baseline always predicts Electronic, the largest training genre. It gets 30.3 percent right. Logistic Regression reaches 56.95 percent, and Random Forest reaches 64.02 percent. That is a gain of 7.1 percentage points, or 637 additional correct songs. The paired comparison shows why this is a net gain. The forest gets 1,221 songs right that logistic regression misses, but logistic regression gets 584 right that the forest misses. Macro F1 also improves from 0.489 to 0.556, so the gain survives when every genre gets equal weight.
+
+SLIDE 2 — ABOUT 60 SECONDS
+
+Random Forest improves F1 in all five genres, with Latin gaining the most. Hip-hop and R&B stays the blind spot. The forest finds 49 of 381 songs, compared with 38 for logistic regression, and still misses 332. Our common feature test shows stronger forest reliance on acousticness and instrumentalness. Both models rely strongly on danceability. The gain comes with 300 trees and about 1.78 million nodes, compared with 70 logistic weights plus five intercepts. The forest is also larger and slower in our local prediction test. My verdict is that its complexity is worthwhile when accuracy is the priority. Logistic Regression stays easier to explain. The split separates full artist credit strings, while collaborators can cross it, so the conclusion applies to this shared test set with that limitation.
+
+HANDOFF TO JAROD
+The forest improves genre prediction, while minority-genre recall and collaborator overlap belong in the final verdict. Hidden backups cover paired errors and the common feature comparison.
+
+Do not read the source blocks in the PowerPoint notes aloud.

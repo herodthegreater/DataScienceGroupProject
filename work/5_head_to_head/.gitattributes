@@ -1,0 +1,7 @@
+# Preserve the exact teammate-upload bytes used by the provenance receipts.
+teammate_inputs/* -text whitespace=cr-at-eol
+models/*.gz binary
+presentation/*.pptx binary
+presentation/*.xlsx binary
+models/parts/* binary
+results/charts/*.svg whitespace=-blank-at-eol

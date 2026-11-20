@@ -1,0 +1,4 @@
+class_weight,mean_validation_accuracy,mean_validation_macro_f1,provenance
+None,0.647,0.553,"teammate notebook recorded output, 3 decimal places; not rerun"
+balanced,0.629,0.573,"teammate notebook recorded output, 3 decimal places; not rerun"
+balanced_subsample,0.638,0.579,"teammate notebook recorded output, 3 decimal places; not rerun"

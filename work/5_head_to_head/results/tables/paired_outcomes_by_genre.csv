@@ -1,0 +1,6 @@
+genre,both_correct,both_wrong,lr_only_correct,rf_only_correct,net_extra_correct_rf
+electronic,1771,501,94,364,270
+hiphop/rnb,29,323,9,20,11
+latin,742,454,71,207,136
+pop,723,768,213,337,124
+rock,1282,611,197,293,96
